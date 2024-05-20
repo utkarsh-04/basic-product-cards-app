@@ -1,0 +1,47 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header, .footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.header {
+  font-size: 2em;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.main {
+  flex: 1;
+  padding: 1em;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1em;
+  max-width: 200px;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1em;
+}
