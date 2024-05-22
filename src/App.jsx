@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import ProductList from './components/ProductList';
+import ProductDetail from './components/ProductDetail';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -18,7 +20,10 @@ const App = () => {
     <div className="app">
       <Header />
       <main>
-        <ProductList products={products} />
+        <Routes>
+          <Route path="/" element={<ProductList products={products} />} />
+          <Route path="/product/:productId" element={<ProductDetail />} />
+        </Routes>
       </main>
       <Footer />
     </div>
